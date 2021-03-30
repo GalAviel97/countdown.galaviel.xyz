@@ -74,3 +74,13 @@ function createCalendar(title, startDate, endDate) {
 
   $("#localtime").append('<a href="' + href + '"><img class="ics" src="./images/cal.svg" alt=""/></a>');
 }
+
+$(document).bind("contextmenu",function(e) {
+  e.preventDefault();
+ });
+
+ $(document).keydown(function(e){
+  if(e.which === 123){
+     return false;
+  }
+});
